@@ -5,11 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "npx mocha",
-    "start:dev": " set NODE_ENV=dev&& nodemon src/app.js ",
-    "start:prod": " set NODE_ENV=prod&& nodemon src/app.js ",
-    "start": "node src/app.js"
-  },
+  "dev": "nodemon src/index.js",
+  "start": "node src/index.js",
+  "test": "npx mocha"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
