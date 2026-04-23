@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
-import {urlMongo} from "../config/index.config.js";
-import logger from '../config/logger.config.js';
+import {urlMongo} from "../config/env.js";
+import logger from '../config/logger.js';
 
 
 export const connectDB = async () => {

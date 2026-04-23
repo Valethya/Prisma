@@ -1,7 +1,7 @@
 import {app} from "./app.js";
-import {port} from "./config/index.config.js";
-import {connectDB} from "./db/db.js";
-import logger from "./config/logger.config.js";
+import {port} from "./config/env.js";
+import {connectDB} from "./config/db.js";
+import logger from "./config/logger.js";
 
 logger.info('server running');
 

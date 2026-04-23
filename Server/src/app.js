@@ -25,8 +25,17 @@ app.use(cors({credentials:true,
 
 app.use(helmet());
 
-//MORGAN
-app.use(morgan());
 
 //router(app);
+
+// 404
+app.use((req, res) => {
+  res.status(404).json({ error: 'Route not found' });
+});
+
+// errores
+app.use((err, req, res, next) => {
+  logger.error(err.message);
+  res.status(500).json({ error: 'Internal server error' });
+});
 
