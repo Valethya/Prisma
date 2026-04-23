@@ -4,7 +4,7 @@ import cors from "cors";
 import helmet from "helmet";
 import path from "path";
 import __dirname from "./utils/utils.js";
-import {mongoUri} from "./db/db.js"
+
 // EXPRESS 
 
 export const app = express();
